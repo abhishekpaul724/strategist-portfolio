@@ -27,8 +27,11 @@ body{
     height:100%;
     width:auto;
     filter: drop-shadow(0 0 0.75rem crimson);
+    animation-name: updown;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
-
 .container1>div{
     width:50%;
 }
@@ -38,4 +41,15 @@ body{
 .container1>div>h3{
     font-size:clamp(1rem,5vw,2.1rem);
     line-height: 1.4;
+}
+@keyframes updown{
+    0% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
 }
