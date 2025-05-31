@@ -12,9 +12,10 @@ body{
     display:grid;
     max-width: 100%;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: 1fr 1fr 1fr;
     box-sizing: border-box;
     row-gap: 0.6rem;
+    column-gap: 0.6rem;
 }
 
 .container1{
@@ -80,6 +81,60 @@ body{
   vertical-align: middle;
   display: inline;
   filter: invert(1);
+}
+
+.intcont{
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 30px rgba(0, 191, 255, 0.562); 
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    border-radius: 10px;
+    border: 1px solid rgb(0,191,255);
+    color:#ffffff;
+    width:auto;
+    height:auto;
+    box-sizing: border-box;
+    line-height: 1.4;
+    padding:0.2rem 1rem;
+    overflow:hidden;
+}
+.intcont h3 span{
+    display:inline-flex;
+    gap:0.6rem;
+    align-items:center;
+}
+.intcont img{
+    height:1.2em;
+    display:inline;
+    vertical-align: middle;
+    filter: invert(1);
+}
+
+.hobbies{
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 30px rgba(0, 191, 255, 0.562); 
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    border-radius: 10px;
+    border: 1px solid rgb(0,191,255);
+    color:#ffffff;
+    width:auto;
+    height:auto;
+    box-sizing: border-box;
+    line-height: 1.4;
+    padding:0.2rem 1rem;
+    overflow:hidden;
+}
+.hobbies h3 span{
+    display:inline-flex;
+    gap:0.6rem;
+    align-items:center;
+}
+.hobbies img{
+    height:1.2em;
+    display:inline;
+    vertical-align: middle;
+    filter: invert(1);
 }
 
 @keyframes updown{
