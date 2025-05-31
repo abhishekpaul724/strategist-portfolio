@@ -8,20 +8,31 @@ body{
     font-family: "Anta";
 }
 
+.gridclass{
+    display:grid;
+    max-width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    box-sizing: border-box;
+    row-gap: 0.6rem;
+}
+
 .container1{
     background: rgba(255, 255, 255, 0.05);
-    box-shadow: 0 0 20px rgba(255, 140, 0, 0.5); 
+    box-shadow: 0 0 30px rgba(0, 191, 255, 0.562); 
     backdrop-filter: blur( 10px );
     -webkit-backdrop-filter: blur( 10px );
     border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border: 1px solid rgb(0,191,255);
     color:#ffffff;
+    grid-column: 1 / -1;
     width:100%;
     height:50vh;
     display:flex;
     justify-content: space-around;
     align-items: center;
     padding: 0.2rem 0.2rem;
+    box-sizing: border-box;
 }
 .container1>img{
     height:100%;
@@ -42,6 +53,35 @@ body{
     font-size:clamp(1rem,5vw,2.1rem);
     line-height: 1.4;
 }
+
+.educont{
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 30px rgba(0, 191, 255, 0.562); 
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    border-radius: 10px;
+    border: 1px solid rgb(0,191,255);
+    color:#ffffff;
+    width:auto;
+    height:auto;
+    box-sizing: border-box;
+    line-height: 1.4;
+    padding:0.2rem 1rem;
+    overflow:hidden;
+}
+.educont h3 span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem; 
+}
+.educont img {
+  height: 1.2em;
+  width: auto;
+  vertical-align: middle;
+  display: inline;
+  filter: invert(1);
+}
+
 @keyframes updown{
     0% {
         transform: translateY(-10px);
