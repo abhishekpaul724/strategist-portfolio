@@ -11,11 +11,12 @@ body{
 .gridclass{
     display:grid;
     max-width: 100%;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     box-sizing: border-box;
     row-gap: 0.6rem;
     column-gap: 0.6rem;
+    justify-content: center;
 }
 
 .container1{
@@ -34,6 +35,7 @@ body{
     align-items: center;
     padding: 0.2rem 0.2rem;
     box-sizing: border-box;
+    overflow: hidden;
 }
 .container1>img{
     height:100%;
